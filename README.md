@@ -11,13 +11,38 @@
 
 ---
 
-## Quick Start — Launch with `annubis` in Your Terminal
+## Quick Start — Install via Package Manager (`brew`, `apt`, `scoop`, `winget`)
 
-Install and launch **Anubis Agent** directly in your terminal just like Hermes:
-
+### 🍎 macOS (Homebrew)
 ```bash
-./install.sh
+brew tap Groennesby/anubis
+brew install anubis
+# or: brew install annubis
+```
+*(Searchable via `brew search anubis`, `brew search ai-agent`, `brew search llm`)*
+
+### 🐧 Linux — Ubuntu / Debian / Kali (`apt`)
+```bash
+curl -fsSL https://raw.githubusercontent.com/Groennesby/anubis-apt/main/setup.sh | sudo bash
+sudo apt install anubis
+```
+*(Searchable via `apt search "AI Agent"`, `apt search llm`, `apt search anubis`)*
+
+### 🪟 Windows (Scoop / Winget / PowerShell)
+```powershell
+# via Scoop:
+scoop bucket add anubis https://github.com/Groennesby/scoop-anubis
+scoop install anubis
+
+# or One-Line PowerShell Installer:
+irm https://raw.githubusercontent.com/Groennesby/Anubis-Agent/main/install.ps1 | iex
+```
+
+### 🚀 Launch in Your Terminal (just like `hermes`)
+```bash
 annubis
+# or:
+anubis
 ```
 
 ### Interactive Slash Commands Inside `annubis`
